@@ -1,0 +1,13 @@
+#bloquear acceso a directorios
+Options -Indexes
+
+#eliminar extensiones .php
+#RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^([^\.]+)$ $1.php [NC]
+
+#ocultar url 
+#Options +FollowSymLinks
+#RewriteBase /sdv/
+#RewriteRule ^/$ index.php [L]
+#RewriteRule ^abm/$ abms/main.php [L]
